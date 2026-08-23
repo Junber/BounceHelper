@@ -1330,6 +1330,7 @@ namespace Celeste.Mod.BounceHelper
                 entityData.Name = "BounceHelper/BounceJellyfish";
                 entityData.Values["platform"] = entityData.Values["bubble"];
                 entityData.Values["soulBound"] = settings.SoulboundJellyfish;
+                entityData.Values["baseDashCount"] = settings.ReplacedJellyfishDashCount;
                 level.Add(new BounceJellyfish(entityData, offset));
                 return true;
             }

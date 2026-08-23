@@ -23,6 +23,10 @@ namespace Celeste.Mod.BounceHelper {
 
         [SettingSubText($"BounceHelper_{nameof(ReplaceJellyfish)}_Hint")]
         public bool ReplaceJellyfish { get; set; }
+        
+        [SettingRange(min: 0, max: 2)]
+        [SettingSubText($"BounceHelper_{nameof(ReplacedJellyfishDashCount)}_Hint")]
+        public int ReplacedJellyfishDashCount { get; set; }
 
         [SettingSubText($"BounceHelper_{nameof(SoulboundJellyfish)}_Hint")]
         public bool SoulboundJellyfish { get; set; }
